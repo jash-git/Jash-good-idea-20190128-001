@@ -1,0 +1,643 @@
+
+<!-- saved from url=(0057)http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="preload" href="./[演算法] 排序演算法(Sort Algorithm)_files/f(4).txt" as="script"><script type="text/javascript" async="" src="./[演算法] 排序演算法(Sort Algorithm)_files/ga.js.下載"></script><script src="./[演算法] 排序演算法(Sort Algorithm)_files/cb=gapi.loaded_1" async=""></script><script src="./[演算法] 排序演算法(Sort Algorithm)_files/cb=gapi(1).loaded_0" async=""></script><script type="text/javascript" async="" src="./[演算法] 排序演算法(Sort Algorithm)_files/plusone.js.下載" gapi_processed="true"></script><script src="./[演算法] 排序演算法(Sort Algorithm)_files/osd.js.下載"></script><script src="./[演算法] 排序演算法(Sort Algorithm)_files/ca-pub-7169356158453069.js.下載"></script><script type="text/javascript" src="./[演算法] 排序演算法(Sort Algorithm)_files/f(4).txt"></script><link rel="preload" href="./[演算法] 排序演算法(Sort Algorithm)_files/f(5).txt" as="script"><script type="text/javascript" src="./[演算法] 排序演算法(Sort Algorithm)_files/f(5).txt"></script><link rel="preload" href="http://pagead2.googlesyndication.com/pagead/js/r20190122/r20180604/show_ads_impl.js" as="script"></head><body>﻿
+
+
+
+<title>[演算法] 排序演算法(Sort Algorithm)</title>
+<meta name="description" content="演算法(Algorithm) - 排序演算法(Sort Algorithm)介紹">
+<meta name="keywords" content="">
+<meta name="type" content="Tutorial">
+
+
+<meta http-equiv="Content-Language" content="zh-tw">
+
+<meta name="robots" content="all">
+<meta name="author" content="yehyeh">
+
+<link rev="yehyeh" href="mailto:yehyeh@gmail.com">
+<link rev="made" href="http://notepad.yehyeh.net/">
+<link rel="shortcut icon" href="http://notepad.yehyeh.net/img/favicon.ico">
+
+<link href="./[演算法] 排序演算法(Sort Algorithm)_files/superfish.css" rel="stylesheet" type="text/css"><link href="./[演算法] 排序演算法(Sort Algorithm)_files/main.css" rel="stylesheet" type="text/css"><link href="./[演算法] 排序演算法(Sort Algorithm)_files/prettify.css" rel="stylesheet" type="text/css"><link href="./[演算法] 排序演算法(Sort Algorithm)_files/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css"><link href="./[演算法] 排序演算法(Sort Algorithm)_files/doc.css" rel="stylesheet" type="text/css"><link href="./[演算法] 排序演算法(Sort Algorithm)_files/Algorithm.css" rel="stylesheet" type="text/css"><script src="./[演算法] 排序演算法(Sort Algorithm)_files/jquery.js.下載" type="text/javascript"></script><script src="./[演算法] 排序演算法(Sort Algorithm)_files/main.js.下載" type="text/javascript"></script><script src="./[演算法] 排序演算法(Sort Algorithm)_files/hoverIntent.js.下載" type="text/javascript"></script><script src="./[演算法] 排序演算法(Sort Algorithm)_files/jquery.bgiframe.min.js.下載" type="text/javascript"></script><script src="./[演算法] 排序演算法(Sort Algorithm)_files/superfish.js.下載" type="text/javascript"></script><script src="./[演算法] 排序演算法(Sort Algorithm)_files/jquery.corner.js.下載" type="text/javascript"></script><script src="./[演算法] 排序演算法(Sort Algorithm)_files/prettify.js.下載" type="text/javascript"></script><script src="./[演算法] 排序演算法(Sort Algorithm)_files/jquery-ui-1.9.2.custom.min.js.下載" type="text/javascript"></script><script src="./[演算法] 排序演算法(Sort Algorithm)_files/tutorialCommon.js.下載" type="text/javascript"></script><script src="./[演算法] 排序演算法(Sort Algorithm)_files/Algorithm.js.下載" type="text/javascript"></script>
+
+
+<div id="wrapper">
+<div id="innerWrapper">
+<div class="head">
+<img id="logoImg" src="./[演算法] 排序演算法(Sort Algorithm)_files/Logo3.png" alt="YehYeh\&#39;s Notepad">
+<a id="yehyehGMail" href="mailto:yehyeh@gmail.com">	
+	<img src="./[演算法] 排序演算法(Sort Algorithm)_files/yehyehGmail.png" alt="yehyeh@gmail.com">
+</a>
+
+﻿
+<ul id="menuUL" class="sf-menu sf-shadow sf-js-enabled">
+    <li class="word2"><a href="http://notepad.yehyeh.net/index.php">首頁</a></li>
+    <li class="word4"><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">網頁設計<span class="sf-sub-indicator"> »</span></a>
+        <ul style="display: none; visibility: hidden;">
+            <li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">HTML<span class="sf-sub-indicator"> »</span></a>
+                <ul style="display: none; visibility: hidden;">
+                    <li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">HTML介紹<span class="sf-sub-indicator"> »</span></a>
+                        <ul style="display: none; visibility: hidden;">
+                            <li><a title="HTML" href="http://notepad.yehyeh.net/Content/WebDesign/HTML/01/1.php">概念&amp;元素</a></li>
+                            <li><a title="HTML" href="http://notepad.yehyeh.net/Content/WebDesign/HTML/01/2.php">HTML的架構</a></li>
+                            <li><a title="HTML" href="http://notepad.yehyeh.net/Content/WebDesign/HTML/01/3.php">第一個HTML</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">轉義字元<span class="sf-sub-indicator"> »</span></a>
+                        <ul style="display: none; visibility: hidden;">
+                            <li><a title="HTML" href="http://notepad.yehyeh.net/Content/WebDesign/HTML/02/1.php">轉義字符簡介</a></li>
+                            <li><a title="HTML" href="http://notepad.yehyeh.net/Content/WebDesign/HTML/02/2.php">一般字元</a></li>
+                            <li><a title="HTML" href="http://notepad.yehyeh.net/Content/WebDesign/HTML/02/3.php">箭號</a></li>
+                            <li><a title="HTML" href="http://notepad.yehyeh.net/Content/WebDesign/HTML/02/4.php">控制字元</a></li>
+                            <li><a title="HTML" href="http://notepad.yehyeh.net/Content/WebDesign/HTML/02/5.php">希臘符號</a></li>
+                            <li><a title="HTML" href="http://notepad.yehyeh.net/Content/WebDesign/HTML/02/6.php">拉丁擴充字元</a></li>
+                            <li><a title="HTML" href="http://notepad.yehyeh.net/Content/WebDesign/HTML/02/7.php">數學運算符號</a></li>
+                            <li><a title="HTML" href="http://notepad.yehyeh.net/Content/WebDesign/HTML/02/8.php">標點符號</a></li>
+                        </ul></li>
+                </ul></li>
+            <li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">CSS<span class="sf-sub-indicator"> »</span></a>
+                <ul style="display: none; visibility: hidden;">
+                    <li><a title="CSS" href="http://notepad.yehyeh.net/Content/WebDesign/CSS/priority/1.php">樣式優先權</a></li>
+                    <li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">選擇器<span class="sf-sub-indicator"> »</span></a>
+                        <ul style="display: none; visibility: hidden;">
+                            <li><a title="CSS" href="http://notepad.yehyeh.net/Content/WebDesign/CSS/selector/1.php">基礎選擇器</a></li>
+                            <li><a title="CSS" href="http://notepad.yehyeh.net/Content/WebDesign/CSS/selector/2.php">屬性選擇器</a></li>
+                            <li><a title="CSS" href="http://notepad.yehyeh.net/Content/WebDesign/CSS/selector/3.php">虛擬選擇器</a></li>
+                        </ul>
+					</li>
+                    <li><a title="CSS" href="http://notepad.yehyeh.net/Content/WebDesign/CSS/reset/reset.php">Reset CSS</a></li>
+					<li><a title="CSS" href="http://notepad.yehyeh.net/Content/WebDesign/CSS/colorTable/colorPicker.php">色碼表 &amp; 選擇器</a></li>    
+					<li><a title="CSS" href="http://notepad.yehyeh.net/Content/WebDesign/CSS/font/font.php">安全字型</a></li>
+					<li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">IE<span class="sf-sub-indicator"> »</span></a>
+                        <ul style="display: none; visibility: hidden;">
+                            <li><a title="CSS" href="http://notepad.yehyeh.net/Content/WebDesign/CSS/IE/hasLayout.php">Has Layout概述</a></li>
+                        </ul>
+					</li>
+                </ul></li>
+            <li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">JavaScript<span class="sf-sub-indicator"> »</span></a>
+                <ul style="display: none; visibility: hidden;">
+                    <li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">ECMA-262<span class="sf-sub-indicator"> »</span></a>
+                        <ul style="display: none; visibility: hidden;">
+                            <li><a title="JavaScript" href="http://notepad.yehyeh.net/Content/WebDesign/Javascript/ECMA/Core/JavaScriptCore.php">JavaScript Core</a></li>
+                            <li><a title="JavaScript" href="http://notepad.yehyeh.net/Content/WebDesign/Javascript/ECMA/Function/JavascriptFunction.php">函式(Function)</a></li>
+                        </ul>
+                    </li>
+                    <li><a title="JavaScript" href="http://notepad.yehyeh.net/Content/WebDesign/Javascript/Namespace.php">命名空間</a></li>
+                    <li><a title="JavaScript" href="http://notepad.yehyeh.net/Content/WebDesign/Javascript/Essay/ApplyAndCall.php">Apply &amp; Call</a></li>
+                </ul>
+            </li>
+
+        </ul></li>
+    <li class="word4"><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">程式設計<span class="sf-sub-indicator"> »</span></a>
+        <ul style="display: none; visibility: hidden;">
+            <li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">C++<span class="sf-sub-indicator"> »</span></a>
+                <ul style="display: none; visibility: hidden;">
+                    <li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">基本程式架構<span class="sf-sub-indicator"> »</span></a>
+                        <ul style="display: none; visibility: hidden;">
+                            <li><a title="C++" href="http://notepad.yehyeh.net/Content/CPP/CH01/01ProgramArch/1.php">程式檔和標頭檔</a></li>
+                            <li><a title="C++" href="http://notepad.yehyeh.net/Content/CPP/CH01/01ProgramArch/2.php">前置處理指令</a></li>
+                            <li><a title="C++" href="http://notepad.yehyeh.net/Content/CPP/CH01/01ProgramArch/3.php">開發流程</a></li>
+                            <li><a title="C++" href="http://notepad.yehyeh.net/Content/CPP/CH01/01ProgramArch/4.php">程式架構</a></li>
+                            <li><a title="C++" href="http://notepad.yehyeh.net/Content/CPP/CH01/01ProgramArch/5.php">脫逸序列</a></li>
+                            <li><a title="C++" href="http://notepad.yehyeh.net/Content/CPP/CH01/01ProgramArch/6.php">關鍵字</a></li>
+                        </ul></li>
+                    <li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">變數<span class="sf-sub-indicator"> »</span></a>
+                        <ul style="display: none; visibility: hidden;">
+                            <li><a title="C++" href="http://notepad.yehyeh.net/Content/CPP/CH01/02Variable/1.php">變數說明</a></li>
+                            <li><a title="C++" href="http://notepad.yehyeh.net/Content/CPP/CH01/02Variable/2.php">生命週期與生存空間</a></li>
+                            <li><a title="C++" href="http://notepad.yehyeh.net/Content/CPP/CH01/02Variable/3.php">外部變數</a></li>
+                            <li><a title="C++" href="http://notepad.yehyeh.net/Content/CPP/CH01/02Variable/4.php">暫存器變數</a></li>
+                            <li><a title="C++" href="http://notepad.yehyeh.net/Content/CPP/CH01/02Variable/5.php">volatile修飾詞</a></li>
+                        </ul></li>
+                    <li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">資料型態<span class="sf-sub-indicator"> »</span></a>
+                        <ul style="display: none; visibility: hidden;">
+                            <li><a title="C++" href="http://notepad.yehyeh.net/Content/CPP/CH01/03DataType/1.php">算術型態</a></li>
+                            <li><a title="C++" href="http://notepad.yehyeh.net/Content/CPP/CH01/03DataType/2.php">資料型態同義字</a></li>
+                            <li><a title="C++" href="http://notepad.yehyeh.net/Content/CPP/CH01/03DataType/3.php">列舉型態</a></li>
+                            <li><a title="C++" href="http://notepad.yehyeh.net/Content/CPP/CH01/03DataType/4.php">型態轉換</a></li>
+                        </ul></li>
+                    <li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">進階資料型態<span class="sf-sub-indicator"> »</span></a>
+                        <ul style="display: none; visibility: hidden;">
+                            <li><a title="C++" href="http://notepad.yehyeh.net/Content/CPP/CH01/04AdvDataType/1.php">基本陣列</a></li>
+                            <li><a title="C++" href="http://notepad.yehyeh.net/Content/CPP/CH01/04AdvDataType/2.php">字元陣列</a></li>
+                            <li><a title="C++" href="http://notepad.yehyeh.net/Content/CPP/CH01/04AdvDataType/3.php">多維陣列</a></li>
+                            <li><a title="C++" href="http://notepad.yehyeh.net/Content/CPP/CH01/04AdvDataType/4.php">string物件</a></li>
+                        </ul></li>
+                    <li><a title="C++" href="http://notepad.yehyeh.net/Content/CPP/CH01/05Operator/1.php">運算子</a></li>
+                    <li><a title="C++" href="http://notepad.yehyeh.net/Content/CPP/CH01/06Pointer/1.php">指標、指涉器</a></li>
+                </ul></li>
+            <li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">C#<span class="sf-sub-indicator"> »</span></a>
+                <ul style="display: none; visibility: hidden;">
+                    <li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">.Net Framework<span class="sf-sub-indicator"> »</span></a>
+                        <ul style="display: none; visibility: hidden;">
+                            <li><a title="C#" href="http://notepad.yehyeh.net/Content/CSharp/CH01/01DotNetFramework/1DotNetFrameworkArch/index.php">.Net Framework架構</a></li>
+                            <li><a title="C#" href="http://notepad.yehyeh.net/Content/CSharp/CH01/01DotNetFramework/2DotNetProgramExec/index.php">.Net開發與執行</a></li>
+                            <li><a title="C#" href="http://notepad.yehyeh.net/Content/CSharp/CH01/01DotNetFramework/3ManagedProgramDevelope/index.php">Managed程式碼</a></li>
+                            <li><a title="C#" href="http://notepad.yehyeh.net/Content/CSharp/CH01/01DotNetFramework/4DeployUnit/index.php">.Net應用程式部署的單位</a></li>
+                        </ul></li>
+                    <li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">程式架構<span class="sf-sub-indicator"> »</span></a>
+                        <ul style="display: none; visibility: hidden;">
+                            <li><a title="C#" href="http://notepad.yehyeh.net/Content/CSharp/CH01/02ProgramArch/1ProgramArch/index.php">基本程式架構</a></li>
+                            <li><a title="C#" href="http://notepad.yehyeh.net/Content/CSharp/CH01/02ProgramArch/2Token/index.php">語彙基元</a></li>
+                            <li><a title="C#" href="http://notepad.yehyeh.net/Content/CSharp/CH01/02ProgramArch/3BasicMember/index.php">基礎成員</a></li>
+                            <li><a title="C#" href="http://notepad.yehyeh.net/Content/CSharp/CH01/02ProgramArch/4PreprocessorDirective/index.php">前置處理指示詞</a></li>
+                        </ul></li>
+                    <li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">物件導向<span class="sf-sub-indicator"> »</span></a>
+                        <ul style="display: none; visibility: hidden;">
+                            <li><a title="C#" href="http://notepad.yehyeh.net/Content/CSharp/CH01/03ObjectOrient/1ObjectAndClass/index.php">物件與類別</a></li>
+                            <li><a title="C#" href="http://notepad.yehyeh.net/Content/CSharp/CH01/03ObjectOrient/2ClassMember/index.php">類別成員</a></li>
+                            <li><a title="C#" href="http://notepad.yehyeh.net/Content/CSharp/CH01/03ObjectOrient/3OOCharacter/index.php">物件導向三大特性</a></li>
+                            <li><a title="C#" href="http://notepad.yehyeh.net/Content/CSharp/CH01/03ObjectOrient/4Constructor/index.php">建構函式與解構函式</a></li>
+                            <li><a title="C#" href="http://notepad.yehyeh.net/Content/CSharp/CH01/03ObjectOrient/5thisAndBase/index.php">this和base</a></li>
+                            <li><a title="C#" href="http://notepad.yehyeh.net/Content/CSharp/CH01/03ObjectOrient/6Interface/index.php">介面</a></li>
+                            <li><a title="C#" href="http://notepad.yehyeh.net/Content/CSharp/CH01/03ObjectOrient/7AbstractClass/index.php">抽象類別</a></li>
+                            <li><a title="C#" href="http://notepad.yehyeh.net/Content/CSharp/CH01/03ObjectOrient/8IACompare/index.php">介面與抽象類別的比較</a></li>
+                        </ul></li>
+                    <li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">命名空間<span class="sf-sub-indicator"> »</span></a>
+                        <ul style="display: none; visibility: hidden;">
+                            <li><a title="C#" href="http://notepad.yehyeh.net/Content/CSharp/CH01/04Namespace/1CompilationUnit/index.php">編譯單位</a></li>
+                            <li><a title="C#" href="http://notepad.yehyeh.net/Content/CSharp/CH01/04Namespace/2NameSpace/index.php">命名空間</a></li>
+                            <li><a title="C#" href="http://notepad.yehyeh.net/Content/CSharp/CH01/04Namespace/3ExternAlias/index.php">外部別名</a></li>
+                            <li><a title="C#" href="http://notepad.yehyeh.net/Content/CSharp/CH01/04Namespace/4Directives/index.php">using命名空間指示詞</a></li>
+                            <li><a title="C#" href="http://notepad.yehyeh.net/Content/CSharp/CH01/04Namespace/5AliasDirectives/index.php">using別名指示詞</a></li>
+                            <li><a title="C#" href="http://notepad.yehyeh.net/Content/CSharp/CH01/04Namespace/6QualifiedAlias/index.php">命名空間別名限定詞</a></li>
+                        </ul></li>
+                    <li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">資料型別<span class="sf-sub-indicator"> »</span></a>
+                        <ul style="display: none; visibility: hidden;">
+                            <li><a title="C#" href="http://notepad.yehyeh.net/Content/CSharp/CH01/05DataType/1CTS/index.php">通用型別系統</a></li>
+                            <li><a title="C#" href="http://notepad.yehyeh.net/Content/CSharp/CH01/05DataType/2Variable/index.php">變數</a></li>
+                            <li><a title="C#" href="http://notepad.yehyeh.net/Content/CSharp/CH01/05DataType/3DeclareAndInit/index.php">變數宣告及初使化</a></li>
+                            <li><a title="C#" href="http://notepad.yehyeh.net/Content/CSharp/CH01/05DataType/4LifeCycle/index.php">生命週期</a></li>
+                            <li><a title="C#" href="http://notepad.yehyeh.net/Content/CSharp/CH01/05DataType/5BoxingAndUnboxing/index.php">Boxing &amp; Unboxing</a></li>
+                        </ul></li>
+                </ul></li>
+            <li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">資料結構<span class="sf-sub-indicator"> »</span></a>
+                <ul style="display: none; visibility: hidden;">
+                    <li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">資算法與時間複雜度<span class="sf-sub-indicator"> »</span></a>
+                        <ul style="display: none; visibility: hidden;">
+                            <li><a title="資料結構" href="http://notepad.yehyeh.net/Content/DS/CH01/1.php">資料結構概念</a></li>
+                            <li><a title="資料結構" href="http://notepad.yehyeh.net/Content/DS/CH01/2.php">演算法評估</a></li>
+                            <li><a title="資料結構" href="http://notepad.yehyeh.net/Content/DS/CH01/3.php">漸近符號</a></li>
+                            <li><a title="資料結構" href="http://notepad.yehyeh.net/Content/DS/CH01/4.php">資料型態</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">基礎遞迴<span class="sf-sub-indicator"> »</span></a>
+                        <ul style="display: none; visibility: hidden;">
+                            <li><a title="資料結構" href="http://notepad.yehyeh.net/Content/DS/CH02/1.php">遞迴演算法</a></li>
+                            <li><a title="資料結構" href="http://notepad.yehyeh.net/Content/DS/CH02/2.php">階乘演算法</a></li>
+                            <li><a title="資料結構" href="http://notepad.yehyeh.net/Content/DS/CH02/3.php">費伯那西數</a></li>
+                            <li><a title="資料結構" href="http://notepad.yehyeh.net/Content/DS/CH02/4.php">河內塔</a></li>
+                            <li><a title="資料結構" href="http://notepad.yehyeh.net/Content/DS/CH02/5.php">最大公因數</a></li>
+                            <li><a title="資料結構" href="http://notepad.yehyeh.net/Content/DS/CH02/6.php">二項式係數</a></li>
+                            <li><a title="資料結構" href="http://notepad.yehyeh.net/Content/DS/CH02/7.php">艾克曼函數</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">陣列<span class="sf-sub-indicator"> »</span></a>
+                        <ul style="display: none; visibility: hidden;">
+                            <li><a title="資料結構" href="http://notepad.yehyeh.net/Content/DS/CH03/1.php">陣列</a></li>
+                            <li><a title="資料結構" href="http://notepad.yehyeh.net/Content/DS/CH03/2.php">一維陣列</a></li>
+                            <li><a title="資料結構" href="http://notepad.yehyeh.net/Content/DS/CH03/3.php">二維陣列</a></li>
+                            <li><a title="資料結構" href="http://notepad.yehyeh.net/Content/DS/CH03/4.php">三維陣列</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">鏈結串列<span class="sf-sub-indicator"> »</span></a>
+                        <ul style="display: none; visibility: hidden;">
+                            <li><a title="資料結構" href="http://notepad.yehyeh.net/Content/DS/CH04/1.php">鏈結串列</a></li>
+                            <li><a title="資料結構" href="http://notepad.yehyeh.net/Content/DS/CH04/2.php">儲存池</a></li>
+                            <li><a title="資料結構" href="http://notepad.yehyeh.net/Content/DS/CH04/3.php">單向鏈結串列</a></li>                            
+                        </ul>
+                    </li>                    
+                </ul>
+            </li>
+			<li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">演算法<span class="sf-sub-indicator"> »</span></a>
+                <ul style="display: none; visibility: hidden;">
+                    <li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">排序(Sort)<span class="sf-sub-indicator"> »</span></a>
+                        <ul style="display: none; visibility: hidden;">
+							<li><a title="演算法" href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php">排序演算法</a></li>
+                            <li><a title="演算法" href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Selection/1.php">選擇(Selection)排序法</a></li>
+							<li><a title="演算法" href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Insertion/1.php">插入(Insertion)排序法</a></li>
+							<li><a title="演算法" href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Bubble/1.php">氣泡(Bubble)排序法</a></li>
+							<li><a title="演算法" href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Shell/Shell.php">謝耳(Shell)排序法</a></li>
+							<li><a title="演算法" href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Shaker/Shaker.php">搖晃(Shaker)排序法</a></li>
+							<li><a title="演算法" href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Quick/Quick.php">快速(Quick)排序法</a></li>
+							<li><a title="演算法" href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Merge/Merge.php">合併(Merge)排序法</a></li>
+							<li><a title="演算法" href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Heap/Heap.php">堆積(Heap)排序法</a></li>
+							<li><a title="演算法" href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Radix/Radix.php">基數(Radix)排序法</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">搜尋(Search)<span class="sf-sub-indicator"> »</span></a>
+                        <ul style="display: none; visibility: hidden;">
+							<li><a title="演算法" href="http://notepad.yehyeh.net/Content/Algorithm/Search/LinearSearch/LinearSearch.php">線性(Linear)搜尋法</a></li>
+                            <li><a title="演算法" href="http://notepad.yehyeh.net/Content/Algorithm/Search/BinarySearch/BinarySearch.php">二分(Binary)搜尋法</a></li>
+                            <li><a title="演算法" href="http://notepad.yehyeh.net/Content/Algorithm/Search/InterpolationSearch/InterpolationSearch.php">插補(Interpolation)搜尋法</a></li>							
+                        </ul>
+                    </li>
+					<li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">精典演算法<span class="sf-sub-indicator"> »</span></a>
+						<ul style="display: none; visibility: hidden;">
+							<li><a title="演算法" href="http://notepad.yehyeh.net/Content/Algorithm/Famous/KnightTour/KnightTour.php">騎士走棋盤</a></li>
+                        </ul>
+					</li>
+				</ul>
+			</li>
+			<li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">軟體工程<span class="sf-sub-indicator"> »</span></a>
+				<ul style="display: none; visibility: hidden;">
+					<li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">Subversion<span class="sf-sub-indicator"> »</span></a>
+						<ul style="display: none; visibility: hidden;">
+							<li><a title="SVN" href="http://notepad.yehyeh.net/Content/SoftwareEnginerring/Subversion/1.php">概述</a></li>
+							<li><a title="SVN" href="http://notepad.yehyeh.net/Content/SoftwareEnginerring/Subversion/2.php">檔案庫</a></li>
+							<li><a title="SVN" href="http://notepad.yehyeh.net/Content/SoftwareEnginerring/Subversion/3.php">建立與導出專案</a></li>
+							<li><a title="SVN" href="http://notepad.yehyeh.net/Content/SoftwareEnginerring/Subversion/4.php">工作副本 &amp; 版本號碼</a></li>
+							<li><a title="SVN" href="http://notepad.yehyeh.net/Content/SoftwareEnginerring/Subversion/5.php">更新 &amp; 提交 &amp; 鎖定</a></li>
+							<li><a title="SVN" href="http://notepad.yehyeh.net/Content/SoftwareEnginerring/Subversion/6.php">衝突 &amp; 合併 &amp; 還原</a></li>
+							<li><a title="SVN" href="http://notepad.yehyeh.net/Content/SoftwareEnginerring/Subversion/7.php">屬性 &amp; 外部定義</a></li>
+							<li><a title="SVN" href="http://notepad.yehyeh.net/Content/SoftwareEnginerring/Subversion/8.php">檔案庫匯入/匯出 &amp; 備份</a></li>
+							<li><a title="SVN" href="http://notepad.yehyeh.net/Content/SoftwareEnginerring/Subversion/9.php">勾子(Hook)</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+            <li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">正則表示式<span class="sf-sub-indicator"> »</span></a>
+                <ul style="display: none; visibility: hidden;">
+                    <li><a title="正則表示式" href="http://notepad.yehyeh.net/Content/Program/RegularExpression/1.php">正則表示式簡介</a></li>
+                    <li><a title="正則表示式" href="http://notepad.yehyeh.net/Content/Program/RegularExpression/2.php">測試工具</a></li>
+                    <li><a title="正則表示式" href="http://notepad.yehyeh.net/Content/Program/RegularExpression/3.php">匹配模式</a></li>
+                    <li><a title="正則表示式" href="http://notepad.yehyeh.net/Content/Program/RegularExpression/4.php">普通字元匹配</a></li>
+                    <li><a title="正則表示式" href="http://notepad.yehyeh.net/Content/Program/RegularExpression/5.php">字元類匹配</a></li>
+                    <li><a title="正則表示式" href="http://notepad.yehyeh.net/Content/Program/RegularExpression/6.php">中介字符</a></li>
+                    <li><a title="正則表示式" href="http://notepad.yehyeh.net/Content/Program/RegularExpression/7.php">字元轉義</a></li>
+                    <li><a title="正則表示式" href="http://notepad.yehyeh.net/Content/Program/RegularExpression/8.php">量符</a></li>
+                    <li><a title="正則表示式" href="http://notepad.yehyeh.net/Content/Program/RegularExpression/9.php">群組與子運算式</a></li>
+                    <li><a title="正則表示式" href="http://notepad.yehyeh.net/Content/Program/RegularExpression/10.php">替代字元</a></li>
+                    <li><a title="正則表示式" href="http://notepad.yehyeh.net/Content/Program/RegularExpression/11.php">註解</a></li>
+                    <li><a title="正則表示式" href="http://notepad.yehyeh.net/Content/Program/RegularExpression/12.php">優先權</a></li>
+                </ul></li>
+            <li><a href="http://notepad.yehyeh.net/Content/Program/ASCII.php">ASCII表</a>
+            </li>
+        </ul></li>
+    <li class="word2"><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">攝影<span class="sf-sub-indicator"> »</span></a>
+        <ul style="display: none; visibility: hidden;">
+            <li><a title="攝影" href="http://notepad.yehyeh.net/Content/Photograph/introduction/1.php">攝影入門</a></li>
+            <li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">ExposureGuide<span class="sf-sub-indicator"> »</span></a>
+              <ul style="display: none; visibility: hidden;">
+                <li><a title="攝影" href="http://notepad.yehyeh.net/Content/Photograph/ExposureGuide/camera-controls.php">掌控相機</a></li>
+                <li><a title="攝影" href="http://notepad.yehyeh.net/Content/Photograph/ExposureGuide/camera-modes.php">相機的模式</a></li>
+                <li><a title="攝影" href="http://notepad.yehyeh.net/Content/Photograph/ExposureGuide/metering-modes.php">測光模式</a></li>
+                <li><a title="攝影" href="http://notepad.yehyeh.net/Content/Photograph/ExposureGuide/white-balance.php">白光衡</a></li>
+                <li><a title="攝影" href="http://notepad.yehyeh.net/Content/Photograph/ExposureGuide/iso-sensitivity.php">ISO 感光度</a></li>              
+                <li><a title="攝影" href="http://notepad.yehyeh.net/Content/Photograph/ExposureGuide/Exposure.php">瞭解曝光</a></li>
+                <li><a title="攝影" href="http://notepad.yehyeh.net/Content/Photograph/ExposureGuide/resolution.php">解析度</a></li>
+                <li><a title="攝影" href="http://notepad.yehyeh.net/Content/Photograph/ExposureGuide/lens-basics.php">鏡頭基礎</a></li>
+                <li><a title="攝影" href="http://notepad.yehyeh.net/Content/Photograph/ExposureGuide/focusing-basics.php">景深</a></li>
+                <li><a title="攝影" href="http://notepad.yehyeh.net/Content/Photograph/ExposureGuide/focusing-modes.php">自動對焦模式</a></li>
+                <li><a title="攝影" href="http://notepad.yehyeh.net/Content/Photograph/ExposureGuide/lens-filters.php">鏡頭濾鏡</a></li>
+                <li><a title="攝影" href="http://notepad.yehyeh.net/Content/Photograph/ExposureGuide/camera-flash-types.php">閃燈種類</a></li>
+                <li><a title="攝影" href="http://notepad.yehyeh.net/Content/Photograph/ExposureGuide/high-speed-sync-flash.php">高速同步閃燈</a></li>
+                <li><a title="攝影" href="http://notepad.yehyeh.net/Content/Photograph/ExposureGuide/slow-sync-flash.php">低速同步閃燈</a></li>
+                <li><a title="攝影" href="http://notepad.yehyeh.net/Content/Photograph/ExposureGuide/ttl-flash-metering.php">TTL閃燈測光</a></li>
+				<li><a title="攝影" href="http://notepad.yehyeh.net/Content/Photograph/ExposureGuide/lamp-reflectors.php">燈具反光罩</a></li>
+              </ul>
+            </li>           
+            <li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">Panasonic LX7 <span class="sf-sub-indicator"> »</span></a>
+              <ul style="display: none; visibility: hidden;">
+                  <li><a title="攝影" href="http://notepad.yehyeh.net/Content/Photograph/LX7/1.php">開箱</a></li>
+                  <li><a title="攝影" href="http://notepad.yehyeh.net/Content/Photograph/LX7/2.php">亂亂拍</a></li>
+              </ul>     
+            </li>   
+         </ul>
+    </li>  
+    <li class="word2"><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">食譜<span class="sf-sub-indicator"> »</span></a>
+        <ul style="display: none; visibility: hidden;">
+			<li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">廚具<span class="sf-sub-indicator"> »</span></a>
+                <ul style="display: none; visibility: hidden;">
+                    <li><a title="廚具" href="http://notepad.yehyeh.net/Content/Cook/Cooker/WMF/CookerShopping.php">WMF 壓力鍋 &amp; 湯鍋開箱</a></li>
+					<li><a title="廚具" href="http://notepad.yehyeh.net/Content/Cook/Cooker/WMF/PressureCooker.php">WMF壓力鍋中文說明書</a></li>
+                </ul> 
+            </li>		
+            <li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">魚類<span class="sf-sub-indicator"> »</span></a>
+                <ul style="display: none; visibility: hidden;">
+                    <li><a title="食譜" href="http://notepad.yehyeh.net/Content/Cook/Fish/Bass/Bass.php">香煎鱸魚</a></li>
+                </ul>                
+            </li>
+            <li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">蔬菜類<span class="sf-sub-indicator"> »</span></a>
+                <ul style="display: none; visibility: hidden;">
+                    <li><a title="食譜" href="http://notepad.yehyeh.net/Content/Cook/Potato/MashedPotato/MashedPotato.php">馬鈴薯泥</a></li>
+                </ul>
+            </li>
+            <li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">米飯類<span class="sf-sub-indicator"> »</span></a>
+                <ul style="display: none; visibility: hidden;">
+                    <li><a title="食譜" href="http://notepad.yehyeh.net/Content/Cook/Rice/GlutinousOilRice/GingerChicken/GingerChicken.php">薑母雞肉麻油飯</a></li>
+                </ul>
+            </li>
+            <li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">湯類<span class="sf-sub-indicator"> »</span></a>
+                <ul style="display: none; visibility: hidden;">
+                    <li><a title="食譜" href="http://notepad.yehyeh.net/Content/Cook/Soup/SoupStock/KelpKatsuobushi/KelpKatsuobushiSoupStock.php">昆布柴魚高湯</a></li>
+					<li><a title="食譜" href="http://notepad.yehyeh.net/Content/Cook/Soup/ShiQuanDaBuTang/ShiQuanDaBuTang.php">十全大補雞肉湯</a></li>
+                </ul>
+            </li>
+			<li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">甜點<span class="sf-sub-indicator"> »</span></a>
+                <ul style="display: none; visibility: hidden;">
+                    <li><a title="食譜" href="http://notepad.yehyeh.net/Content/Cook/Soup/RedBeanSoup/RedBeanSoup.php">紅豆湯</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>             
+    <li class="word2"><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">玩樂<span class="sf-sub-indicator"> »</span></a>
+        <ul style="display: none; visibility: hidden;">
+            <li><a title="行程規劃" href="http://notepad.yehyeh.net/Content/travel/index.php">行程規劃</a>
+            </li>
+            <li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">國外<span class="sf-sub-indicator"> »</span></a>
+                <ul style="display: none; visibility: hidden;">
+                    <li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">德國<span class="sf-sub-indicator"> »</span></a>
+                        <ul style="display: none; visibility: hidden;">
+                            <li><a title="德國" href="http://notepad.yehyeh.net/Content/travel/Foriegn/Germany/01.php">出國之前</a></li>
+                            <li><a title="德國" href="http://notepad.yehyeh.net/Content/travel/Foriegn/Germany/02.php">敗家指南</a></li>
+                            <li><a title="德國" href="http://notepad.yehyeh.net/Content/travel/Foriegn/Germany/03.php">Day1</a></li>
+                        </ul></li>
+                </ul></li>
+        </ul>
+    </li>
+    <li class="word2"><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">股票<span class="sf-sub-indicator"> »</span></a>
+        <ul style="display: none; visibility: hidden;">
+            <li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">2012年3月<span class="sf-sub-indicator"> »</span></a>
+                <ul style="display: none; visibility: hidden;">
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201203/2012_03_12.htm">2012/03/12</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201203/2012_03_13.php">2012/03/13</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201203/2012_03_14.php">2012/03/14</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201203/2012_03_15.php">2012/03/15</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201203/2012_03_16.php">2012/03/16</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201203/2012_03_19.php">2012/03/19</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201203/2012_03_20.php">2012/03/20</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201203/2012_03_21.php">2012/03/21</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201203/2012_03_22.php">2012/03/22</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201203/2012_03_23.php">2012/03/23</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201203/2012_03_26.php">2012/03/26</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201203/2012_03_27.php">2012/03/27</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201203/2012_03_28.php">2012/03/28</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201203/2012_03_29.php">2012/03/29</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201203/2012_03_30.php">2012/03/30</a></li>
+                </ul></li>
+            <li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">2012年4月<span class="sf-sub-indicator"> »</span></a>
+                <ul style="display: none; visibility: hidden;">
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201204/2012_04_02.php">2012/04/02</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201204/2012_04_03.php">2012/04/03</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201204/2012_04_05.php">2012/04/05</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201204/2012_04_06.php">2012/04/06</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201204/2012_04_09.php">2012/04/09</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201204/2012_04_10.php">2012/04/10</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201204/2012_04_11.php">2012/04/11</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201204/2012_04_12.php">2012/04/12</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201204/2012_04_13.php">2012/04/13</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201204/2012_04_16.php">2012/04/16</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201204/2012_04_17.php">2012/04/17</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201204/2012_04_18.php">2012/04/18</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201204/2012_04_19.php">2012/04/19</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201204/2012_04_20.php">2012/04/20</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201204/2012_04_23.php">2012/04/23</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201204/2012_04_24.php">2012/04/24</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201204/2012_04_25.php">2012/04/25</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201204/2012_04_26.php">2012/04/25</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201204/2012_04_27.php">2012/04/25</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201204/2012_04_30.php">2012/04/25</a></li>
+                </ul>
+            </li>
+            <li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Sort.php#" class="sf-with-ul">2012年5月<span class="sf-sub-indicator"> »</span></a>
+                <ul style="display: none; visibility: hidden;">
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201205/2012_05_02.php">2012/05/02</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201205/2012_05_03.php">2012/05/03</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201205/2012_05_04.php">2012/05/04</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201205/2012_05_07.php">2012/05/07</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201205/2012_05_09.php">2012/05/09</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201205/2012_05_10.php">2012/05/10</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201205/2012_05_11.php">2012/05/11</a></li>
+                    <li><a title="股票" href="http://notepad.yehyeh.net/Content/Stock/201205/2012_05_14.php">2012/05/14</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+</div>
+<div class="clear"></div>			
+<div id="mainPanel">
+
+<div class="hAdsense">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-7169356158453069";
+/* 橫廣告 */
+google_ad_slot = "4222125535";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript" src="./[演算法] 排序演算法(Sort Algorithm)_files/f(6).txt">
+</script><ins id="aswift_0_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;" data-ad-slot="4222125535"><ins id="aswift_0_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><iframe width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0px;width:728px;height:90px;" src="./[演算法] 排序演算法(Sort Algorithm)_files/saved_resource(16).html"></iframe></ins></ins>
+</div><div id="ads">
+	<script type="text/javascript"><!--
+	google_ad_client = "ca-pub-7169356158453069";
+	/* blog.yehyeh.net */
+	google_ad_slot = "1969319365";
+	google_ad_width = 160;
+	google_ad_height = 600;
+	//-->
+	</script>
+
+	<script type="text/javascript" src="./[演算法] 排序演算法(Sort Algorithm)_files/f(6).txt">
+	</script>
+</div><div class="content">
+<h1 id="top">[演算法<span class="hide">(Algorithm)</span>] 排序演算法(Sort Algorithm)<div id="googlePlusAdd1">
+<!-- 將此標記放在您想要顯示 +1 按鈕的位置 -->
+<div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 38px; height: 24px;"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 38px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 24px;" tabindex="0" vspace="0" width="100%" id="I0_1548636208848" name="I0_1548636208848" src="./[演算法] 排序演算法(Sort Algorithm)_files/fastbutton.html" data-gapiattached="true" title="G+"></iframe></div>
+
+<!-- 將此顯示呼叫 (render call) 放在適當位置 -->
+<script type="text/javascript">
+window.___gcfg = {lang: 'zh-TW'};
+
+(function() {
+var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+po.src = 'https://apis.google.com/js/plusone.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();
+</script>
+</div>
+</h1>
+
+<h2 id="section1"></h2>
+<ul>
+	<li><span class="h1">內部 &amp; 外部排序</span>
+		<ul>
+			<li><dfn>內部排序(Internal Sort)</dfn>
+				<ul>
+					<li>資料筆數少，可以全部放到記憶體中排序</li>
+					<li>一般的演算法皆為內部排序</li>
+				</ul>
+			</li>
+			<li><dfn>外部排序(External Sort)</dfn>
+				<ul>
+					<li>資料量大，無法放到記憶體中排序，需透過其它儲存裝置輔助</li>
+					<li>外部排序通常會分次載入部份的資料到記憶體，用內部排序演算法排序後再回存或合併結果</li>
+				</ul>
+			</li>			
+		</ul>		
+	</li>
+	<li><span class="h1">穩定與不穩定</span>
+		<ul>
+			<li><dfn>穩定(Stable)</dfn>：
+				<ul>
+					<li>相同鍵值的資料，排序後順序和排序前一樣</li>
+					<li><span class="ex"><span class="exPrefix">範例：</span></span>
+						<ul>
+							<li>排序前： 2, <span class="blue">7</span>, 9, 3, <span class="pink">7</span> <span class="arr"> ⇒ </span> 藍7在粉紅7前面</li>
+							<li>排序後： 2, 3, <span class="blue">7</span>, <span class="pink">7</span>, 9 <span class="arr"> ⇒ </span> 藍7保持在粉紅7前面</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><dfn>不穩定(Unstable)</dfn>：
+				<ul>
+					<li>相同鍵值的資料，排序後順序不一定和排序前一樣</li>
+					<li><span class="ex"><span class="exPrefix">範例：</span></span>
+						<ul>
+							<li>排序前： 2, <span class="blue">7</span>, 9, 3, <span class="pink">7</span> <span class="arr"> ⇒ </span> 藍7在粉紅7前面</li>
+							<li>排序後： 2, 3, <span class="pink">7</span>, <span class="blue">7</span>, 9 <span class="arr"> ⇒ </span> 藍7在粉紅7後面</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li><dfn>原地置換(In-Place)</dfn>
+		<ul>
+			<li>使用資料原來的資料結構(陣列)進行排序，不需使用暫存的輔助資料結構</li>
+		</ul>
+	</li>
+	<li><span class="h1">常用排序演算法整理</span>
+		<table class="hover textAlignCenter verticalAlignMiddle">
+			<thead>
+				<tr class=""> <th style="line-height: 40px;" rowspan="2">演算法</th> <th colspan="3">時間複雜度</th> <th style="line-height: 40px;" rowspan="2">空間複雜度</th> <th style="line-height: 40px;" rowspan="2">穩定性</th> <th style="line-height: 40px;" rowspan="2">類型</th></tr>
+				<tr> <th>Best</th> <th>Worst</th> <th>Avg</th> </tr>
+			</thead>
+			<tbody>
+				<tr class=""> <th>選擇排序法(Selection Sort)</th> <td> Ο(n<sup>2</sup>) </td> <td> Ο(n<sup>2</sup>) </td> <td class=""> Ο(n<sup>2</sup>) </td> <td> Ο(1) </td> <td>不穩定</td> <td>選擇</td></tr>
+				<tr class=""> <th>插入排序法(Insertion Sort)</th> <td class=""> Ο(n) </td> <td> Ο(n<sup>2</sup>) </td> <td> Ο(n<sup>2</sup>) </td> <td> Ο(1) </td> <td>穩定</td> <td>插入</td> </tr>		
+				<tr class=""> <th>氣泡排序法(Bubble Sort)</th> <td class=""> Ο(n) </td> <td class=""> Ο(n<sup>2</sup>) </td> <td> Ο(n<sup>2</sup>) </td> <td> Ο(1) </td> <td>穩定</td> <td>交換</td></tr>
+				<tr class=""> <th>謝爾排序法(Shell Sort)</th> <td class=""> Ο(n) </td> <td class=""> Ο(n<sup>2</sup>)~ Ο(n<sup>1.5</sup>)</td> <td> Ο(n<sup>5/4</sup>) </td> <td> Ο(n) + Ο(1) </td> <td>不穩定</td> <td>插入</td></tr>
+				<tr class=""> <th>搖晃排序法(Shaker Sort)</th> <td class=""> Ο(n) </td> <td> Ο(n<sup>2</sup>)</td> <td> Ο(n<sup>2</sup>) </td> <td> Ο(1) </td> <td>穩定</td> <td>交換</td></tr>
+				<tr class=""> <th>快速排序法(Quick Sort)</th> <td class=""> Ο(n log n) </td> <td> Ο(n<sup>2</sup>)</td> <td class=""> Ο(n log n) </td> <td> Ο(log n)~Ο(n) </td> <td>不穩定</td> <td>交換</td></tr>
+				<tr class=""> <th>合併排序法(Merge Sort)</th> <td> Ο(n log n) </td> <td> Ο(n log n)</td> <td> Ο(n log n) </td> <td> Ο(n) </td> <td>穩定</td> <td>合併</td></tr>
+				<tr class=""> <th>堆積排序法(Heap Sort)</th> <td> Ο(n log n) </td> <td> Ο(n log n)</td> <td> Ο(n log n) </td> <td class=""> Ο(n) + Ο(1) </td> <td>不穩定</td> <td>選擇</td></tr>
+				<tr class=""> <th>基數排序(Radix Sort)</th> <td> Ο(d×(n+r)) </td> <td> Ο(d×(n+r)) </td> <td> Ο(d×(n+r)) </td> <td class=""> Ο(n×r) </td> <td class="">穩定</td> <td>分配</td></tr>
+			</tbody>
+		</table>		
+	</li>
+	<li><span class="h1">常用排序演算法概念</span>
+		<ul>
+			<li><dfn>選擇排序法(Selection Sort)</dfn>
+				<ul>
+					<li>一一掃瞄未排序資料，找出最大值(or最小)</li>
+					<li>將最大值加入已排序的資料中</li>
+					<li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Selection/1.php">選擇排序法詳細介紹</a></li> 
+				</ul>
+			</li>
+			<li><dfn>插入排序法(Insertion Sort)</dfn>
+				<ul>
+					<li>依序由未排序的資料中選一筆資料</li>
+					<li>一一掃瞄已排序資料，將選取的資料插入正確位置</li>
+					<li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Insertion/1.php">插入排序法詳細介紹</a></li>
+				</ul>
+			</li>
+			<li><dfn>氣泡排序法(Bubble Sort)</dfn>
+				<ul>
+					<li>對未排序資料兩兩比對掃瞄</li>
+					<li>兩兩比對時會將未排序的最大值，介由Swap移到未排序資料中的最右邊</li>
+					<li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Bubble/1.php">氣泡排序法詳細介紹</a></li>
+				</ul>
+			</li>
+			<li><dfn>謝爾排序法(Shell Sort)</dfn>
+				<ul>
+					<li>將一維陣列看待成二維陣列</li>
+					<li>依序對二維陣列的每一行作排序</li>
+					<li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Shell/Shell.php">謝爾排序法詳細介紹</a></li>
+				</ul>
+			</li>
+			<li><dfn>搖晃排序法(Shaker Sort)</dfn>
+				<ul>
+					<li>雙向的氣泡排序法</li>
+					<li>每回合都會將未排序資料中的最大值移到最右邊，最小值移到最左邊</li>
+					<li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Shaker/Shaker.php">搖晃排序法詳細介紹</a></li>
+				</ul>
+			</li>			
+			<li><dfn>快速排序法(Quick Sort)</dfn>
+				<ul>
+					<li>將比<strong>基準值(Pivot)</strong>小的數值移到左邊，比基準值大的數值移到右邊</li>
+					<li>對基準值的左、右子數列遞迴作相同動作</li>
+					<li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Quick/Quick.php">快速排序法詳細介紹</a></li>
+				</ul>				
+			</li>
+			<li><dfn>合併排序(Merge Sort)</dfn>
+				<ul>
+					<li>將數列對分成兩個子數列，並遞回對分</li>
+					<li>對分至只有一個元素時，將元素回傳合併</li>
+					<li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Merge/Merge.php">合併排序法詳細介紹</a></li>
+				</ul>				
+			</li>
+			<li><dfn>堆積排序(Heap Sort)</dfn>
+				<ul>
+					<li>利用堆積樹(Heap Tree)的性質來排序</li>
+					<li>最大堆積樹(Max Heap Tree)的根節點一定是最大值，一一與最後一個樹葉節點交換後，取出加入已排序數列</li>
+					<li>將原來的樹重新調整為最大堆積樹</li>
+					<li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Heap/Heap.php">堆積排序法詳細介紹</a></li>
+				</ul>				
+			</li>
+			<li><dfn>基數排序(Radix Sort)</dfn>
+				<ul>
+					<li>可多鍵值排序</li>
+					<li>將資料一一分類後再合併</li>
+					<li><a href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Radix/Radix.php">基數排序法詳細介紹</a></li>					
+				</ul>				
+			</li>
+		</ul>		
+	</li>
+</ul>
+
+
+<div class="clear"></div><div class="PreNextPageLink"><a class="PrePageLink" title="單向鏈結串列" href="http://notepad.yehyeh.net/Content/DS/CH04/3.php">◄前一篇 [資料結構]單向鏈結串列</a><a class="NextPageLink" title="選擇(Selection)排序法" href="http://notepad.yehyeh.net/Content/Algorithm/Sort/Selection/1.php">[演算法]選擇(Selection)排序法 後一篇►</a><div style="clear:both;"> </div></div></div> <!--content-->
+
+<script language="javascript" src="./[演算法] 排序演算法(Sort Algorithm)_files/Radix.js.下載"></script>
+
+			            
+            <div class="clear"></div>            
+            
+<div class="hAdsense">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-7169356158453069";
+/* 橫廣告 */
+google_ad_slot = "4222125535";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript" src="./[演算法] 排序演算法(Sort Algorithm)_files/f(6).txt">
+</script><ins id="aswift_1_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;" data-ad-slot="4222125535"><ins id="aswift_1_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><iframe width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0px;width:728px;height:90px;" src="./[演算法] 排序演算法(Sort Algorithm)_files/saved_resource(17).html"></iframe></ins></ins>
+</div>            
+    	    <div id="footer">Copyright © YehYeh. All rights reserved.</div>    	    
+   		    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16359729-1']);
+  _gaq.push(['_setDomainName', 'yehyeh.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>   		    
+        </div> <!--mainPanel-->
+       
+     </div> <!--innerWrapper-->
+</div><iframe id="google_osd_static_frame_4894007459082" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;" src="./[演算法] 排序演算法(Sort Algorithm)_files/saved_resource(18).html"></iframe><iframe name="oauth2relay632407011" id="oauth2relay632407011" src="./[演算法] 排序演算法(Sort Algorithm)_files/postmessageRelay.html" tabindex="-1" aria-hidden="true" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe> <!--wrapper-->
+
+</body><iframe id="google_shimpl" style="display: none;" src="./[演算法] 排序演算法(Sort Algorithm)_files/saved_resource(19).html"></iframe><iframe id="google_esf" name="google_esf" src="./[演算法] 排序演算法(Sort Algorithm)_files/zrt_lookup.html" data-ad-client="ca-pub-7169356158453069" style="display: none;"></iframe></html>
